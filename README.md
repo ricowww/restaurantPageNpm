@@ -53,7 +53,7 @@ maker of page upon wipe
 
 --------------------------------
 INPUT
-clicks
+clicks 
 --------------------------------
 STEPS
 Initial webpage with links to other pages [DONE]
@@ -66,6 +66,8 @@ Functon to clear or delete served content [dom]
 --------------------------------------------------------------------
 OUTPUTS
 -----------------------------------------------------------
+[ ] setup webpack
+[ ] skeletal frame with dom
 [ ] Generate module
     [ ] Home
     [ ] Menu
