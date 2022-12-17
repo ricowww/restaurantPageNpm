@@ -16,11 +16,28 @@ function generateHomePage(){
     //attach to document
     anchorDiv.appendChild(divElement);
 
-
+    //button event listener
+        //DOM button
+    const sampleButton = document.createElement("button");
+        //button text
+    sampleButton.textContent = "sample button";
+        //add trigger
+    sampleButton.addEventListener("click", (e) =>{
+        //statement
+        alert("Event listener is working");    
+    });
     
+    //
+
+
+
+
+
     //test, needs to be called via console log
     //this code ends any other processes, codes after this would be unreachable
     return "The generateHomePageModule is working";
+
+
 }
 
 export default generateHomePage;
