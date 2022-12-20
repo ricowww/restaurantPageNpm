@@ -1,5 +1,7 @@
+import headerLogo from './assets/header-logo.jpg'
 
-function generateHeader(){
+function header(){
+    
     //anchor
     const headerAnchor = document.getElementById("headerSectionDiv")
 
@@ -14,66 +16,34 @@ function generateHeader(){
     logoImg.src = headerLogo;
     logoImg.classList.add("header-logo");
     headerBoxDiv.appendChild(logoImg);
+    /* event listener to homepage*/
 
     //headerBox-logoText
-
-
-
-    
+    const logoText = document.createElement("div");
+    logoText.textContent = "SNACK SHACK";
+    logoText.classList.add("icon-text");
+    headerAnchor.appendChild(logoText);
 
     //headerLinks
-    
+    const headerLinks = document.createElement("ul");
+    headerLinks.classList.add("header-links");
+    headerAnchor.appendChild(headerLinks);
 
-    
+    //headerLinks-menu
+    const headerLinksMenu = document.createElement("li");
+    headerLinksMenu.textContent = "Menu";
+    headerLinks.appendChild(headerLinksMenu);
 
+    //headerLinks-stores
+    const headerLinksStores = document.createElement("li");
+    headerLinksStores.textContent = "Stores";
+    headerLinks.appendChild(headerLinksStores);
 
-
-
-
-
-/////////////////////////////////////////////////
-    //Adds text to an object in html
-    const anchorDiv = document.getElementById('anchorDiv');//declare as object
-    anchorDiv.textContent = "This is a DOM-generated text";
-
-    //Creates an element in html
-    //create DOM
-    const divElement = document.createElement("div");
-    //add text
-    divElement.textContent = "This is a DOM-generated element and text and potentially more";
-    //add class
-    divElement.classList.add("domClass");
-    //add id
-    divElement.setAttribute("id", "12345");
-    //attach to document
-    anchorDiv.appendChild(divElement);
-
-    //button event listener
-        //DOM button
-    const sampleButton = document.createElement("button");
-        //button text
-    sampleButton.textContent = "sample button";
-        //add trigger
-    sampleButton.addEventListener("click", (e) =>{
-        //statement
-        alert("Event listener is working"); 
-        
-    /////////////////////////////////////////////    
-
-
-    });
-    
-    //
-
-
-
-
-
-    //test, needs to be called via console log
-    //this code ends any other processes, codes after this would be unreachable
-    return "The generateHeader is working";
-
+    //headerLinks-order
+    const headerLinksOrder = document.createElement("li");
+    headerLinksOrder.textContent = "Order";
+    headerLinks.appendChild(headerLinksOrder);
 
 }
 
-export default generateHeader;
+export default header;
