@@ -10,6 +10,46 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/generateHeader.js":
+/*!*******************************!*\
+  !*** ./src/generateHeader.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction generateHeader() {\n  //headerSection\n\n  /////////////////////////////////////////////////\n  //Adds text to an object in html\n  var anchorDiv = document.getElementById('anchorDiv'); //declare as object\n  anchorDiv.textContent = \"This is a DOM-generated text\";\n\n  //Creates an element in html\n  //create DOM\n  var divElement = document.createElement(\"div\");\n  //add text\n  divElement.textContent = \"This is a DOM-generated element and text and potentially more\";\n  //add class\n  divElement.classList.add(\"domClass\");\n  //add id\n  divElement.setAttribute(\"id\", \"12345\");\n  //attach to document\n  anchorDiv.appendChild(divElement);\n\n  //button event listener\n  //DOM button\n  var sampleButton = document.createElement(\"button\");\n  //button text\n  sampleButton.textContent = \"sample button\";\n  //add trigger\n  sampleButton.addEventListener(\"click\", function (e) {\n    //statement\n    alert(\"Event listener is working\");\n\n    /////////////////////////////////////////////    \n  });\n\n  //\n\n  //test, needs to be called via console log\n  //this code ends any other processes, codes after this would be unreachable\n  return \"The generateHeader is working\";\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (generateHeader);\n\n//# sourceURL=webpack://3_workingversion/./src/generateHeader.js?");
+
+/***/ }),
+
+/***/ "./src/header.js":
+/*!***********************!*\
+  !*** ./src/header.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction generateHeader() {\n  //anchor\n  var headerAnchor = document.getElementById(\"headerSectionDiv\");\n\n  //headerBox\n  var headerBoxDiv = document.createElement(\"div\");\n  headerBoxDiv.textContent = \"headerBoxDiv\";\n  headerBoxDiv.classList.add(\"header-box\");\n  headerAnchor.appendChild(headerBoxDiv);\n\n  //headerBox-logoImg\n  var logoImg = document.createElement(\"img\");\n  logoImg.src = headerLogo;\n  logoImg.classList.add(\"header-logo\");\n  headerBoxDiv.appendChild(logoImg);\n\n  //headerBox-logoText\n\n  //headerLinks\n\n  /////////////////////////////////////////////////\n  //Adds text to an object in html\n  var anchorDiv = document.getElementById('anchorDiv'); //declare as object\n  anchorDiv.textContent = \"This is a DOM-generated text\";\n\n  //Creates an element in html\n  //create DOM\n  var divElement = document.createElement(\"div\");\n  //add text\n  divElement.textContent = \"This is a DOM-generated element and text and potentially more\";\n  //add class\n  divElement.classList.add(\"domClass\");\n  //add id\n  divElement.setAttribute(\"id\", \"12345\");\n  //attach to document\n  anchorDiv.appendChild(divElement);\n\n  //button event listener\n  //DOM button\n  var sampleButton = document.createElement(\"button\");\n  //button text\n  sampleButton.textContent = \"sample button\";\n  //add trigger\n  sampleButton.addEventListener(\"click\", function (e) {\n    //statement\n    alert(\"Event listener is working\");\n\n    /////////////////////////////////////////////    \n  });\n\n  //\n\n  //test, needs to be called via console log\n  //this code ends any other processes, codes after this would be unreachable\n  return \"The generateHeader is working\";\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (generateHeader);\n\n//# sourceURL=webpack://3_workingversion/./src/header.js?");
+
+/***/ }),
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _skeleton__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./skeleton */ \"./src/skeleton.js\");\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _generateHeader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./generateHeader */ \"./src/generateHeader.js\");\n/* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles/main.css */ \"./src/styles/main.css\");\n/* harmony import */ var _assets_header_logo_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/header-logo.jpg */ \"./src/assets/header-logo.jpg\");\n\n\n\n\n\n(0,_skeleton__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(); //generate skeleton of html\n(0,_header__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(); //generate header of html\n(0,_generateHeader__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(); //generate header section\n\nconsole.log('The index.js is working'); //test\n\n//# sourceURL=webpack://3_workingversion/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/skeleton.js":
+/*!*************************!*\
+  !*** ./src/skeleton.js ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction skeleton() {\n  //main anchor\n  var mainBody = document.getElementById(\"mainBody\");\n\n  //html skeleton with dummy text, class, and id\n\n  //header \n  var headerSectionDiv = document.createElement(\"div\");\n  headerSectionDiv.textContent = \"headerSectionDiv\";\n  headerSectionDiv.classList.add(\"header-box\");\n  headerSectionDiv.setAttribute(\"id\", \"headerSectionDiv\");\n  mainBody.appendChild(headerSectionDiv);\n\n  //hero/title\n  var heroDiv = document.createElement(\"div\");\n  heroDiv.textContent = \"heroDiv\";\n  heroDiv.classList.add(\"title-section\");\n  heroDiv.setAttribute(\"id\", \"heroDiv\");\n  mainBody.appendChild(heroDiv);\n\n  //slides/body\n  var slidesDiv = document.createElement(\"div\");\n  slidesDiv.textContent = \"slidesDiv\";\n  slidesDiv.classList.add(\"slides-section\");\n  slidesDiv.setAttribute(\"id\", \"slidesDiv\");\n  mainBody.appendChild(slidesDiv);\n\n  //quote/testimony \n  var quotesDiv = document.createElement(\"div\");\n  quotesDiv.textContent = \"quotesDiv\";\n  quotesDiv.classList.add(\"quote-section\");\n  quotesDiv.setAttribute(\"id\", \"quotesDiv\");\n  mainBody.appendChild(quotesDiv);\n\n  //call to action \n  var callToActionDiv = document.createElement(\"div\");\n  callToActionDiv.textContent = \"callToActionDiv\";\n  callToActionDiv.classList.add(\"cta-section\");\n  callToActionDiv.setAttribute(\"id\", \"callToActionDiv\");\n  mainBody.appendChild(callToActionDiv);\n\n  //footer \n  var footerDiv = document.createElement(\"div\");\n  footerDiv.textContent = \"footerDiv\";\n  footerDiv.classList.add(\"footer\");\n  footerDiv.setAttribute(\"id\", \"footerDiv\");\n  mainBody.appendChild(footerDiv);\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (skeleton);\n\n//# sourceURL=webpack://3_workingversion/./src/skeleton.js?");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/main.css":
 /*!**********************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/main.css ***!
@@ -110,23 +150,13 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
-/***/ "./src/generateHomePage.js":
-/*!*********************************!*\
-  !*** ./src/generateHomePage.js ***!
-  \*********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/assets/header-logo.jpg":
+/*!************************************!*\
+  !*** ./src/assets/header-logo.jpg ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n\nfunction generateHomePage(){\n    //Adds text to an object in html\n    const anchorDiv = document.getElementById('anchorDiv');//declare as object\n    anchorDiv.textContent = \"This is a DOM-generated text\";\n\n    //Adds an element in html\n\n    \n    //test, needs to be called via console log\n    //this code ends any other processes, codes after this would be unreachable\n    return \"The generateHomePageModule is working\";\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (generateHomePage);\n\n//# sourceURL=webpack://3_workingversion/./src/generateHomePage.js?");
-
-/***/ }),
-
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _generateHomePage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./generateHomePage */ \"./src/generateHomePage.js\");\n/* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/main.css */ \"./src/styles/main.css\");\n\n\n\n//test\nconsole.log('The index.js is working')\nconsole.log((0,_generateHomePage__WEBPACK_IMPORTED_MODULE_0__[\"default\"])())\n\n\n//# sourceURL=webpack://3_workingversion/./src/index.js?");
+eval("module.exports = __webpack_require__.p + \"header-logo.jpg\";\n\n//# sourceURL=webpack://3_workingversion/./src/assets/header-logo.jpg?");
 
 /***/ })
 
@@ -181,6 +211,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _gen
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -195,6 +237,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _gen
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
