@@ -7,7 +7,6 @@ function header(){
 
     //headerBox
     const headerBoxDiv = document.createElement("div");
-    headerBoxDiv.textContent = "headerBoxDiv";
     headerBoxDiv.classList.add("header-box");
     headerAnchor.appendChild(headerBoxDiv);
     

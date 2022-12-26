@@ -6,7 +6,6 @@ function hero(){
 
     //titleBox
     const titleBoxDiv = document.createElement("div");
-    titleBoxDiv.textContent = "titleBoxDiv";
     titleBoxDiv.classList.add("title-box");
     heroAnchor.appendChild(titleBoxDiv);
 
@@ -30,7 +29,6 @@ function hero(){
 
     //storesDiv
     const storesDiv = document.createElement("div");
-    storesDiv.textContent = "storesDiv";
     heroAnchor.appendChild(storesDiv);
 
 
