@@ -10,6 +10,26 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/callToAction.js":
+/*!*****************************!*\
+  !*** ./src/callToAction.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction callToAction() {\n  //anchor\n  var ctaAnchor = document.getElementById(\"callToActionDiv\");\n\n  //ctaContainerDiv\n  var ctaContainerDiv = document.createElement(\"div\");\n  ctaContainerDiv.classList.add(\"cta-container\");\n  ctaAnchor.appendChild(ctaContainerDiv);\n\n  //ctaContainerDiv-BoxDiv\n  var ctaContainerDivBoxDiv = document.createElement(\"div\");\n  ctaContainerDivBoxDiv.classList.add(\"cta-box\");\n  ctaContainerDiv.appendChild(ctaContainerDivBoxDiv);\n\n  //ctaContainerDiv-BoxDiv-Title\n  var ctaContainerDivBoxDivTitle = document.createElement(\"div\");\n  ctaContainerDivBoxDivTitle.classList.add(\"cta-title\");\n  ctaContainerDivBoxDivTitle.textContent = \"Come get your f***in burgers only here at the Snack Shack!\";\n  ctaContainerDivBoxDiv.appendChild(ctaContainerDivBoxDivTitle);\n\n  //ctaContainerDiv-BoxDiv-Subtitle\n  var ctaContainerDivBoxDivSubTitle = document.createElement(\"div\");\n  ctaContainerDivBoxDivSubTitle.classList.add(\"cta-subtitle\");\n  ctaContainerDivBoxDivSubTitle.textContent = \"Order thru Grab, Facebook, SMS, Phone, or deliver/courier services!\";\n  ctaContainerDivBoxDiv.appendChild(ctaContainerDivBoxDivSubTitle);\n\n  //ctaContainerDiv-Button\n  var ctaContainerDivButton = document.createElement(\"button\");\n  ctaContainerDivButton.textContent = \"order\";\n  ctaContainerDivButton.classList.add(\"order\");\n  ctaContainerDiv.appendChild(ctaContainerDivButton);\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (callToAction);\n\n//# sourceURL=webpack://3_workingversion/./src/callToAction.js?");
+
+/***/ }),
+
+/***/ "./src/footer.js":
+/*!***********************!*\
+  !*** ./src/footer.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction footer() {\n  //anchor\n  var footerAnchor = document.getElementById(\"footerDiv\");\n\n  //footerDiv\n  var footerDiv = document.createElement(\"div\");\n  footerDiv.classList.add(\"footer\");\n  footerDiv.textContent(\"Copyright @The Snack Shack 2022\");\n  footerAnchor.appendChild(footerDiv);\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (footer);\n\n//# sourceURL=webpack://3_workingversion/./src/footer.js?");
+
+/***/ }),
+
 /***/ "./src/header.js":
 /*!***********************!*\
   !*** ./src/header.js ***!
@@ -26,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n//import headerLogo from './assets/header-logo.jpg'\n\nfunction hero() {\n  //anchor\n  var heroAnchor = document.getElementById(\"heroDiv\");\n\n  //titleBox\n  var titleBoxDiv = document.createElement(\"div\");\n  titleBoxDiv.textContent = \"titleBoxDiv\";\n  titleBoxDiv.classList.add(\"title-box\");\n  heroAnchor.appendChild(titleBoxDiv);\n\n  //titleBox-title\n  var titleBoxTitle = document.createElement(\"div\");\n  titleBoxTitle.textContent = \"Fresh grilled burgers\";\n  titleBoxTitle.classList.add(\"title\");\n  heroAnchor.appendChild(titleBoxTitle);\n\n  //titleBox-subtitle\n\n  //titleBox-button\n\n  //storesDiv\n\n  //storesDiv-Img\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (hero);\n\n//# sourceURL=webpack://3_workingversion/./src/hero.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _assets_title_image_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/title-image.jpg */ \"./src/assets/title-image.jpg\");\n\nfunction hero() {\n  //anchor\n  var heroAnchor = document.getElementById(\"heroDiv\");\n\n  //titleBox\n  var titleBoxDiv = document.createElement(\"div\");\n  titleBoxDiv.textContent = \"titleBoxDiv\";\n  titleBoxDiv.classList.add(\"title-box\");\n  heroAnchor.appendChild(titleBoxDiv);\n\n  //titleBox-title\n  var titleBoxTitle = document.createElement(\"div\");\n  titleBoxTitle.textContent = \"Fresh grilled burgers\";\n  titleBoxTitle.classList.add(\"title\");\n  titleBoxDiv.appendChild(titleBoxTitle);\n\n  //titleBox-subtitle\n  var titleBoxSubTitle = document.createElement(\"div\");\n  titleBoxSubTitle.textContent = \"Freshly made 100% beef patties straight from the friggin' grinder! The only handmade, home-made grilled burgers in U.P. Diliman! come get your f***in burgers only here at the Snack Shack!\";\n  titleBoxSubTitle.classList.add(\"subtitle\");\n  titleBoxDiv.appendChild(titleBoxSubTitle);\n\n  //titleBox-button\n  var titleBoxButton = document.createElement(\"button\");\n  titleBoxButton.textContent = \"Order\";\n  titleBoxButton.classList.add(\"order\");\n  titleBoxDiv.appendChild(titleBoxButton);\n\n  //storesDiv\n  var storesDiv = document.createElement(\"div\");\n  storesDiv.textContent = \"storesDiv\";\n  heroAnchor.appendChild(storesDiv);\n\n  //storesDiv-Img\n  var storesDivImg = document.createElement(\"img\");\n  storesDivImg.src = _assets_title_image_jpg__WEBPACK_IMPORTED_MODULE_0__;\n  storesDivImg.classList.add(\"hero-image\");\n  storesDiv.appendChild(storesDivImg);\n  /* event listener to homepage*/\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (hero);\n\n//# sourceURL=webpack://3_workingversion/./src/hero.js?");
 
 /***/ }),
 
@@ -36,7 +56,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.css */ \"./src/styles/main.css\");\n/* harmony import */ var _skeleton__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./skeleton */ \"./src/skeleton.js\");\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _hero__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./hero */ \"./src/hero.js\");\n\n\n\n\n(0,_skeleton__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(); //generate skeleton of html\n(0,_header__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(); //generate header of html\n//generateHeader();//generate header section\n\nconsole.log('The index.js is working'); //test\n\n//# sourceURL=webpack://3_workingversion/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.css */ \"./src/styles/main.css\");\n/* harmony import */ var _skeleton__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./skeleton */ \"./src/skeleton.js\");\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _hero__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./hero */ \"./src/hero.js\");\n/* harmony import */ var _slidesHome__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./slidesHome */ \"./src/slidesHome.js\");\n/* harmony import */ var _quotes__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./quotes */ \"./src/quotes.js\");\n/* harmony import */ var _callToAction__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./callToAction */ \"./src/callToAction.js\");\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./footer */ \"./src/footer.js\");\n\n\n\n\n\n\n\n\n(0,_skeleton__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(); //generate skeleton of html\n(0,_header__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(); //generate header of html\n(0,_hero__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n(0,_slidesHome__WEBPACK_IMPORTED_MODULE_4__[\"default\"])();\n(0,_quotes__WEBPACK_IMPORTED_MODULE_5__[\"default\"])();\n(0,_callToAction__WEBPACK_IMPORTED_MODULE_6__[\"default\"])();\n(0,_footer__WEBPACK_IMPORTED_MODULE_7__[\"default\"])();\nconsole.log('The index.js is working'); //test\n\n//# sourceURL=webpack://3_workingversion/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/quotes.js":
+/*!***********************!*\
+  !*** ./src/quotes.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction quotes() {\n  //anchor\n  var quotesAnchor = document.getElementById(\"quotesDiv\");\n\n  //cite-pQuote\n  var quotesPQ = document.createElement(\"p\");\n  quotesPQ.classList.add(\"quote\");\n  quotesPQ.textContent = \"Great food with generous servings! I highly recommend the half pounder with cheese, to which I add extra jalapenos, bacon, and blue cheese. Add a side of regular fries and you have there a divine combination...\";\n  quotesAnchor.appendChild(quotesPQ);\n\n  //cite-pAuthor\n  var quotesPA = document.createElement(\"p\");\n  quotesPA.classList.add(\"cite\");\n  quotesPA.textContent = \"G. Guibone, Google Reviews\";\n  quotesAnchor.appendChild(quotesPA);\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (quotes);\n\n//# sourceURL=webpack://3_workingversion/./src/quotes.js?");
 
 /***/ }),
 
@@ -47,6 +77,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction skeleton() {\n  //main anchor\n  var mainBody = document.getElementById(\"mainBody\");\n\n  //html skeleton with dummy text, class, and id\n\n  //header \n  var headerSectionDiv = document.createElement(\"div\");\n  headerSectionDiv.textContent = \"headerSectionDiv\";\n  headerSectionDiv.classList.add(\"header-box\");\n  headerSectionDiv.setAttribute(\"id\", \"headerSectionDiv\");\n  mainBody.appendChild(headerSectionDiv);\n\n  //hero/title\n  var heroDiv = document.createElement(\"div\");\n  heroDiv.textContent = \"heroDiv\";\n  heroDiv.classList.add(\"title-section\");\n  heroDiv.setAttribute(\"id\", \"heroDiv\");\n  mainBody.appendChild(heroDiv);\n\n  //slides/body\n  var slidesDiv = document.createElement(\"div\");\n  slidesDiv.textContent = \"slidesDiv\";\n  slidesDiv.classList.add(\"slides-section\");\n  slidesDiv.setAttribute(\"id\", \"slidesDiv\");\n  mainBody.appendChild(slidesDiv);\n\n  //quote/testimony \n  var quotesDiv = document.createElement(\"div\");\n  quotesDiv.textContent = \"quotesDiv\";\n  quotesDiv.classList.add(\"quote-section\");\n  quotesDiv.setAttribute(\"id\", \"quotesDiv\");\n  mainBody.appendChild(quotesDiv);\n\n  //call to action \n  var callToActionDiv = document.createElement(\"div\");\n  callToActionDiv.textContent = \"callToActionDiv\";\n  callToActionDiv.classList.add(\"cta-section\");\n  callToActionDiv.setAttribute(\"id\", \"callToActionDiv\");\n  mainBody.appendChild(callToActionDiv);\n\n  //footer \n  var footerDiv = document.createElement(\"div\");\n  footerDiv.textContent = \"footerDiv\";\n  footerDiv.classList.add(\"footer\");\n  footerDiv.setAttribute(\"id\", \"footerDiv\");\n  mainBody.appendChild(footerDiv);\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (skeleton);\n\n//# sourceURL=webpack://3_workingversion/./src/skeleton.js?");
+
+/***/ }),
+
+/***/ "./src/slidesHome.js":
+/*!***************************!*\
+  !*** ./src/slidesHome.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _assets_burger_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/burger.jpg */ \"./src/assets/burger.jpg\");\n/* harmony import */ var _assets_fries_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/fries.jpg */ \"./src/assets/fries.jpg\");\n/* harmony import */ var _assets_wings_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/wings.jpg */ \"./src/assets/wings.jpg\");\n\n\n\nfunction slidesHome() {\n  //anchor\n  var slidesHomeAnchor = document.getElementById(\"slidesDiv\");\n\n  //slidesHomeTitle\n  var slidesHomeTitle = document.createElement(\"div\");\n  slidesHomeTitle.textContent = \"Made with love\";\n  slidesHomeTitle.classList.add(\"slides-title\");\n  slidesHomeAnchor.appendChild(slidesHomeTitle);\n\n  //slidesHomeSlides\n  var slidesHomeSlides = document.createElement(\"div\");\n  //slidesHomeSlides.textContent = \"\";\n  slidesHomeSlides.classList.add(\"slides\");\n  slidesHomeAnchor.appendChild(slidesHomeSlides);\n\n  //slidesHomeSlides-fig-burger\n  var slidesHomeFigBurger = document.createElement(\"figure\");\n  slidesHomeFigBurger.classList.add(\"fig\");\n  slidesHomeSlides.appendChild(slidesHomeFigBurger);\n\n  //slidesHomeSlides-fig-burger-img\n  var slidesHomeImgBurger = document.createElement(\"img\");\n  slidesHomeImgBurger.src = _assets_burger_jpg__WEBPACK_IMPORTED_MODULE_0__;\n  slidesHomeImgBurger.classList.add(\"fig-img\");\n  slidesHomeFigBurger.appendChild(slidesHomeImgBurger);\n\n  //slidesHomeSlides-fig-burger-figcaption\n  var slidesHomeCapBurger = document.createElement(\"figcaption\");\n  slidesHomeCapBurger.textContent = \"Fresh Grilled Burgers\";\n  slidesHomeFigBurger.appendChild(slidesHomeCapBurger);\n\n  //slidesHomeSlides-fig-fries\n  var slidesHomeFigFries = document.createElement(\"figure\");\n  slidesHomeFigFries.classList.add(\"fig\");\n  slidesHomeSlides.appendChild(slidesHomeFigFries);\n\n  //slidesHomeSlides-fig-fries-img\n  var slidesHomeImgFries = document.createElement(\"img\");\n  slidesHomeImgFries.src = _assets_fries_jpg__WEBPACK_IMPORTED_MODULE_1__;\n  slidesHomeImgFries.classList.add(\"fig-img\");\n  slidesHomeFigFries.appendChild(slidesHomeImgFries);\n\n  //slidesHomeSlides-fig-fries-figcaption\n  var slidesHomeCapFries = document.createElement(\"figcaption\");\n  slidesHomeCapFries.textContent = \"French Fries\";\n  slidesHomeFigFries.appendChild(slidesHomeCapFries);\n\n  //slidesHomeSlides-fig-wings\n  var slidesHomeFigWings = document.createElement(\"figure\");\n  slidesHomeFigWings.classList.add(\"fig\");\n  slidesHomeSlides.appendChild(slidesHomeFigWings);\n\n  //slidesHomeSlides-fig-wings-img\n  var slidesHomeImgWings = document.createElement(\"img\");\n  slidesHomeImgWings.src = _assets_wings_jpg__WEBPACK_IMPORTED_MODULE_2__;\n  slidesHomeImgWings.classList.add(\"fig-img\");\n  slidesHomeFigWings.appendChild(slidesHomeImgWings);\n\n  //slidesHomeSlides-fig-wings-figcaption\n  var slidesHomeCapWings = document.createElement(\"figcaption\");\n  slidesHomeCapWings.textContent = \"Chicken Wings\";\n  slidesHomeFigWings.appendChild(slidesHomeCapWings);\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (slidesHome);\n\n//# sourceURL=webpack://3_workingversion/./src/slidesHome.js?");
 
 /***/ }),
 
@@ -150,6 +190,26 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/assets/burger.jpg":
+/*!*******************************!*\
+  !*** ./src/assets/burger.jpg ***!
+  \*******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"burger.jpg\";\n\n//# sourceURL=webpack://3_workingversion/./src/assets/burger.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/fries.jpg":
+/*!******************************!*\
+  !*** ./src/assets/fries.jpg ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"fries.jpg\";\n\n//# sourceURL=webpack://3_workingversion/./src/assets/fries.jpg?");
+
+/***/ }),
+
 /***/ "./src/assets/header-logo.jpg":
 /*!************************************!*\
   !*** ./src/assets/header-logo.jpg ***!
@@ -157,6 +217,26 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"header-logo.jpg\";\n\n//# sourceURL=webpack://3_workingversion/./src/assets/header-logo.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/title-image.jpg":
+/*!************************************!*\
+  !*** ./src/assets/title-image.jpg ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"title-image.jpg\";\n\n//# sourceURL=webpack://3_workingversion/./src/assets/title-image.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/wings.jpg":
+/*!******************************!*\
+  !*** ./src/assets/wings.jpg ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"wings.jpg\";\n\n//# sourceURL=webpack://3_workingversion/./src/assets/wings.jpg?");
 
 /***/ })
 
