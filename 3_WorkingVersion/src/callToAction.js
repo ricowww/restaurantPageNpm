@@ -26,7 +26,7 @@ function callToAction() {
 
     //ctaContainerDiv-Button
     const ctaContainerDivButton = document.createElement("button");
-    ctaContainerDivButton.textContent = "order";
+    ctaContainerDivButton.textContent = "Order";
     ctaContainerDivButton.classList.add("order");
     ctaContainerDiv.appendChild(ctaContainerDivButton); 
 

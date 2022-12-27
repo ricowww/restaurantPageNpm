@@ -208,7 +208,7 @@ const rf = document.createElement("tr");
 rf.col1 = document.createElement("td");
 rf.col2 = document.createElement("td");
 (rf.col1).textContent = "Fries";
-(rf.col2).textContent = "115";
+(rf.col2).textContent = "80";
 slidesMenuTable.appendChild(rf);
 rf.appendChild(rf.col1);
 rf.appendChild(rf.col2);
