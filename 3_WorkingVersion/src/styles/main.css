@@ -10,11 +10,14 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
+
 .header-box {
     display: flex;
     justify-content: flex-start;
     gap: 5px;
     align-items: center;
+    position: sticky;
 }
 
 .header-logo {

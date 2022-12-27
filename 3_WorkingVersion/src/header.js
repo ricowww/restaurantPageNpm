@@ -1,4 +1,6 @@
 import headerLogo from './assets/header-logo.jpg'
+import wipeContent from "./wipeContent"
+
 
 function header(){
     
@@ -31,16 +33,19 @@ function header(){
     //headerLinks-menu
     const headerLinksMenu = document.createElement("li");
     headerLinksMenu.textContent = "Menu";
+    headerLinksMenu.setAttribute("id", "menuLink");
     headerLinks.appendChild(headerLinksMenu);
 
     //headerLinks-stores
     const headerLinksStores = document.createElement("li");
     headerLinksStores.textContent = "Stores";
+    headerLinksStores.setAttribute("id", "storesLink");
     headerLinks.appendChild(headerLinksStores);
 
     //headerLinks-order
     const headerLinksOrder = document.createElement("li");
-    headerLinksOrder.textContent = "Order";
+    headerLinksOrder.textContent = "Order";    
+    headerLinksOrder.setAttribute("id", "orderLink");
     headerLinks.appendChild(headerLinksOrder);
 
 }

@@ -45,11 +45,11 @@ function slidesOrder(){
     (figureSSCapDet.l3).classList.add("cta-subtitle");
     (figureSSCapDet.l1).textContent = "Local Delivery - 2km radius/ P80 fee / no minimum order";
     (figureSSCapDet.l2).textContent = "Bulk Order - Metro Manila / free delivery / minimum order of P2000";
-    (figureSSCapDet.l3).textContent = "UP - 09152599495 / SK - 09265122257 / MC - 09153094580";
+    //(figureSSCapDet.l3).textContent = "UP - 09152599495 / SK - 09265122257 / MC - 09153094580";
     figureSSCap.appendChild(figureSSCapDet);
     figureSSCapDet.appendChild(figureSSCapDet.l1);
     figureSSCapDet.appendChild(figureSSCapDet.l2);
-    figureSSCapDet.appendChild(figureSSCapDet.l3);
+    //figureSSCapDet.appendChild(figureSSCapDet.l3);
 
     //slides-figureGrab
     const figureGrab = document.createElement("figure");
