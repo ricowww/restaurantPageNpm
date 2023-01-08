@@ -1,4 +1,18 @@
 # restaurantPageNpm
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+IMMEDIATE TASKS
+[] sticky nav bar
+[] links to buttons
+
+
+
+/////////////////////////////////
+COMMON ERRORS
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+1. Not importing the function 
+
+
+
 A restaurant page generated using JS with the help of NPM
 
 
@@ -66,8 +80,11 @@ Functon to clear or delete served content [dom]
 --------------------------------------------------------------------
 OUTPUTS
 -----------------------------------------------------------
-[ ] setup webpack
-[ ] skeletal frame with dom
+
+[ONGOING] setup webpack
+[ONGOING ] skeletal frame with dom
+    [DONE] duplicate js bundles
+    [NOT WORKING] parse jpegs
 [ ] Generate module
     [ ] Home
     [ ] Menu
